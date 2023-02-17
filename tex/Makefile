@@ -80,5 +80,5 @@ test:
 	@echo "      PS = $(BASENAME).ps"
 	@echo "     PDF = $(BASENAME).pdf"
 	@echo "     LOF = $(BASENAME).lof"
-	@echo "LOT = $(BASENAME).lot"
-	@echo "OUT = $(BASENAME).out"
+	@echo "     LOT = $(BASENAME).lot"
+	@echo "     OUT = $(BASENAME).out"

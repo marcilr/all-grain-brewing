@@ -12,20 +12,35 @@
 # Aug 05, 2019
 # https://yuukidach.github.io/p/makefile-for-projects-with-subdirectories/
 #
-.PHONY: all clean test
+.PHONY: debug all clean cycle test
 
-SUBDIRS=tex
+#
+# Simple assignment :=
+# Recursive assignment =
+# What's the difference between := and = in Makefile?
+# Asked 12 years ago, Modified 12 months ago, Viewed 80k times
+# https://stackoverflow.com/questions/4879592/whats-the-difference-between-and-in-makefile
+#
+SUBDIRS := tex
 
-all:
+#
+# Display command being called.
+#
+# The @ symble before echo suppresses display
+# of the echo command itseld.
+#
+debug:
+	@echo "debug: $@"
+
+all: debug
 	$(MAKE) -C $(SUBDIRS)
 
-clean:
+clean: debug
 	$(MAKE) clean -C $(SUBDIRS)
 
-cycle:
+cycle: debug
 	$(MAKE) cycle -C $(SUBDIRS)
 
-test:
+test: debug
 	@echo "SUBDIRS directories: $(SUBDIRS)"
 	$(MAKE) test -C $(SUBDIRS)
-

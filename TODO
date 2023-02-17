@@ -4,12 +4,26 @@ Copyright (C) 2023 by Raymond E. Marcil <marcilr@gmail.com>
 
 
 
-Fri 17 Feb 2023 09:28:16 AM AKST - Put space between Header and Abstract on 
-  first page.
-
 Fri 17 Feb 2023 09:28:16 AM AKST - Center the Abtract paragraph keeping the
   Abtract lines left aligned in relationship to each other.
 
 Fri 17 Feb 2023 07:34:32 AM AKST - Would like to create Makefile and build.xml
   in root of all-grain-brewing that wraps thoughs in the tex/ subdirecory.
 
+
+Complete
+========
+Fri 17 Feb 2023 09:28:16 AM AKST - Put space between Header and Abstract on
+  first page.
+
+Increased space bwtween Title and Abstract using vspace{}:
+
+\maketitle
+
+\vspace{2cm}
+
+\begin{abstract}
+     \noindent All-Grain Brewing\\
+     Equipment, Technique and Supplies
+\end{abstract}
+--Fri 17 Feb 2023 09:35:35 AM AKST

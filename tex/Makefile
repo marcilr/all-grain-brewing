@@ -1,5 +1,5 @@
 # -*- Mode: Makefile -*-
-# Created Thu Aug  4 09:03:50 AKDT 2011
+# Created Fri 17 Feb 2023 08:04:17 AM AKST
 # by Raymond E. Marcil <marcilr@gmail.com>
 #
 # Makefile for a single-file LaTeX document plus optional BibTeX file.
@@ -42,7 +42,7 @@ cycle: clean dvi ps pdf
 all: dvi ps pdf
 
 clean:
-	$(RM) $(LOG) $(LOF) $(AUX) $(TOC) $(DVI) $(PS) 
+	$(RM) $(LOG) $(LOF) $(AUX) $(TOC) $(DVI) $(PS)
 	$(RM) $(BBL) $(BLG) $(PDF) $(LOT) $(OUT) *.tmp
 
 dvi:
@@ -66,3 +66,19 @@ ps: dvi
 
 pdf: ps
 	$(PS2PDF) $(PS)
+
+test:
+	@echo "BASENAME = $(BASENAME)"
+	@echo "     SRC = $(BASENAME).tex"
+	@echo "     BIB = $(BASENAME).bib"
+	@echo "     BLG = $(BASENAME).blg"
+	@echo "     BBL = $(BASENAME).bbl"
+	@echo "     LOG = $(BASENAME).log"
+	@echo "     AUX = $(BASENAME).aux"
+	@echo "     TOC = $(BASENAME).toc"
+	@echo "     DVI = $(BASENAME).dvi"
+	@echo "      PS = $(BASENAME).ps"
+	@echo "     PDF = $(BASENAME).pdf"
+	@echo "     LOF = $(BASENAME).lof"
+	@echo "LOT = $(BASENAME).lot"
+	@echo "OUT = $(BASENAME).out"

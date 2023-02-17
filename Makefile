@@ -12,7 +12,7 @@
 # Aug 05, 2019
 # https://yuukidach.github.io/p/makefile-for-projects-with-subdirectories/
 #
-.PHONY: clean echoes
+.PHONY: all clean test
 
 SUBDIRS=tex
 

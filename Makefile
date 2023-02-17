@@ -27,3 +27,5 @@ cycle:
 
 test:
 	@echo "SUBDIRS directories: $(SUBDIRS)"
+	$(MAKE) test -C $(SUBDIRS)
+

@@ -22,5 +22,8 @@ all:
 clean:
 	$(MAKE) clean -C $(SUBDIRS)
 
+cycle:
+	$(MAKE) cycle -C $(SUBDIRS)
+
 test:
 	@echo "SUBDIRS directories: $(SUBDIRS)"

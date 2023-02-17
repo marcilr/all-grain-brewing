@@ -14,11 +14,13 @@
 #
 .PHONY: clean echoes
 
+SUBDIRS=tex
+
+all:
+	$(MAKE) -C $(SUBDIRS)
 
 clean:
+	$(MAKE) clean -C $(SUBDIRS)
 
-echoes:
-	@echo "INC files: $(INCS)"
-	@echo "SRC files: $(SRCS)"
-	@echo "OBJ files: $(OBJS)"
-
+test:
+	@echo "SUBDIRS directories: $(SUBDIRS)"

@@ -96,6 +96,10 @@ subfigure.sty
   http://ctan.org/tex-archive/obsolete/macros/latex/contrib/subfigure/
   http://mirror.ctan.org/obsolete/macros/latex/contrib/subfigure.zip
 
+tex/
+  LaTeX files directory.
+  Created Fri 17 Feb 2023 07:31:58 AM AKST
+
 tocbibind.sty
   Add bibliography/index/contents to Table of Contents.
 

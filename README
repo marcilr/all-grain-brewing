@@ -1,0 +1,83 @@
+README
+Created Thu Aug  4 15:31:24 AKDT 2011
+by Raymond E. Marcil <marcilr@gmail.com>
+
+
+All-Grain Brewing
+
+
+
+Sun Mar 10 20:17:06 AKDT 2013
+============================
+Set subversion property such that that svninfo keywords get expanded in all-grain-brewing.tex
+file:
+
+$ svn propset svn:keywords "Id" all-grain-bewing.tex
+property 'svn:keywords' set on 'all-grain-bewing.tex'
+$
+
+
+Mon Feb  4 12:01:03 AKST 2013
+=============================
+Set subversion property such that that svninfo keywords get expanded in myfile.tex file:
+
+$ svn propset svn:keywords "Id" examples.tex 
+property 'svn:keywords' set on 'examples.tex'
+$
+
+
+Build Process
+=============
+Traditionally, you converted your LaTeX source file to a DVI file, which could then be 
+converted to PostScript with dvips.  This, in turn, can be converted to a PDF file by 
+ps2pdf:
+
+		  latex		    dvips	     ps2pdf
+	text.tex -------> text.dvi -------> text.ps --------> text.pdf
+
+This requires all the graphics to be EPS files. But that's not a major problem, as raster 
+graphics can be converted to EPS.  Furthermore, the scalability of vector graphics means 
+clean-looking figures at all resolutions. And vector PS is usually very compact.
+
+But what about using photographs, which are usually saved as JPEGs? This really isn't a 
+problem, because the jpeg2ps command (from Debian's jpeg2ps package) wraps JPEG images 
+in an EPS header. 
+
+mintaka.sdsu.edu/
+
+
+
+Filelist
+========
+Makefile
+  Standard GNU makefile to build document.
+
+all-grain-brewing.txt
+  All grain brewing
+
+clean.bat
+  Remove dynamically created files from build process.
+  Analogous to 'make clean' target.
+
+make.bat
+  Build PDF from LaTeX source
+
+tex/
+  LaTeX files directory.
+  Created Fri 17 Feb 2023 07:31:58 AM AKST
+
+TODO list with items 
+
+
+Links
+=====
+LaTeX to PDF
+Nice outline of process and converting various graphics formats.
+http://mintaka.sdsu.edu/GF/bibliog/latex/LaTeXtoPDF.html
+
+Cygwin
+Cygwin is a Linux-like environment for Windows.
+http://www.cygwin.com/
+
+The teTeX HOWTO: The Linux-teTeX Local Guide
+http://tldp.org/HOWTO/TeTeX-HOWTO.html

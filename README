@@ -52,15 +52,11 @@ Filelist
 Makefile
   Standard GNU makefile to build document.
 
+.gitignore
+  Files for git to ignore
+
 all-grain-brewing.txt
   All grain brewing
-
-clean.bat
-  Remove dynamically created files from build process.
-  Analogous to 'make clean' target.
-
-make.bat
-  Build PDF from LaTeX source
 
 tex/
   LaTeX files directory.

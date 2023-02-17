@@ -1,0 +1,15 @@
+#.gitignore
+# Created Fri 17 Feb 2023 07:47:38 AM AKST
+# by Raymond E. Marcil <marcilr@gmail.com>
+#
+# Files for git to ignore
+#
+.gitignore
+all-grain-brewing.aux
+all-grain-brewing.dvi
+all-grain-brewing.lof
+all-grain-brewing.log
+all-grain-brewing.lot
+all-grain-brewing.out
+all-grain-brewing.ps
+all-grain-brewing.toc
